@@ -13,4 +13,3 @@ closeBtn.addEventListener('click', () => {
   navMenu.querySelector('ul').classList.remove('show');
   menuIcon.classList.remove('active');
 });
-
