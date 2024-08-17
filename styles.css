@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --background-color: #000000;
   /* background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); */
@@ -281,7 +285,6 @@ header nav ul li a.active::after {
 .project a:hover {
   color: var(--primary-color); 
 }
-
 
 .project a:visited {
   color: #b0b0b0;
@@ -585,28 +588,30 @@ header nav ul li a.active::after {
 }
 
 /* Additional adjustments for very narrow screens (like iPhone 14 Pro Max) */
-@media screen and (max-width: 430px) {
+@media (max-width: 430px) {
+  .contact-container {
+      flex-direction: column;
+      padding: 0 10px; /* Add padding to prevent overflow */
+  }
+
   .contact-form-section,
   .contact-info-section {
-    padding: 10px; 
+      width: 100%;
+      padding: 20px;
+      margin: 0;
   }
-  
+
   .contact-form-section input,
-  .contact-form-section textarea,
+  .contact-form-section textarea {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
   .contact-form-section button {
-    font-size: 14px; 
-    padding: 8px; 
-  }
-  
-  .contact-info-section p {
-    font-size: 14px; 
-  }
-  
-  .contact-info-section .social-links img {
-    width: 20px; 
-    height: 20px;
+      width: 100%;
   }
 }
+
 
 /* Footer */
 footer {
