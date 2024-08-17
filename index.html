@@ -4,14 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hare's Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <nav>
-    <img src="assets/logo.png" alt="Logo" class="logo">
-    <ul>
-      <li><a href="#home">Home</a></li>
+    <nav class="nav-menu" id="nav-menu">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <div class="menu-icon" id="menu-icon">
+        <i class="material-icons">menu</i>
+      </div>
+      <div class="close-btn" id="close-btn">
+        <i class="material-icons">close</i>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -32,7 +39,7 @@
   <section id="about">
     <div class="about-container">
       <h2>About Me</h2>
-      <p>Hi! I'm Hare, an aspiring software developer currently pursuing a B.Tech <br>in Information Technology. I have a passion for coding, solving complex <br> problems, and learning new technologies. As a 2nd year student, I'm eager <br>to apply my skills and knowledge to real-world projects and challenges.</p>
+      <p>Hi! I'm Hare, an aspiring software developer currently pursuing a B.Tech in Information Technology. I have a passion for coding, solving complex problems, and learning new technologies. As a 2nd year student, I'm eager to apply my skills and knowledge to real-world projects and challenges.</p>
   </section>
   
   <section id="education">
@@ -242,6 +249,6 @@
     <p>&copy; 2024 Hare Sahani</p>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
