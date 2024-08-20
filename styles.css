@@ -105,7 +105,8 @@ header nav ul li a.active::after {
     /* padding: 20px 0; */
   }
   header nav ul li {
-    margin: 0.2em 0; /* Add margin between menu items */
+    margin: 0.2em 1em ;
+    
   }
 
   header nav ul.show {
@@ -153,6 +154,18 @@ header nav ul li a.active::after {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@media (max-width: 430px) {
+  #home h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #home p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -407,32 +420,31 @@ header nav ul li a.active::after {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .skills-overview {
-    flex-direction: column;
-  }
-
-  .skills-category {
-    width: 100%; 
-  }
-
+@media screen and (min-width: 375px) and (max-width: 400px) {
   .tools-technologies {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+    justify-content: center; 
+  }
+
+  .tools-icons:nth-child(5) { 
+    grid-column: span 2; 
+    justify-self: center;
   }
 
   .tools-icons {
-    flex: 1 1 100%; 
-    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .tools-icons:nth-of-type(2n) {
-    margin-right: 0;
-  }
   .tools-icons ul li {
-    justify-content: center; 
+    justify-content: center;
   }
 }
+
 
 /* Contact Section */
 #contact {
@@ -587,11 +599,11 @@ header nav ul li a.active::after {
   }
 }
 
-/* Additional adjustments for very narrow screens (like iPhone 14 Pro Max) */
-@media (max-width: 430px) {
+
+@media (max-width: 375px) {
   .contact-container {
       flex-direction: column;
-      padding: 0 10px; /* Add padding to prevent overflow */
+      padding: 0 10px;
   }
 
   .contact-form-section,
