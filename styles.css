@@ -212,8 +212,8 @@ header nav ul li a.active::after {
 .about-container p {
   color: #cccccc;
   margin: 0;
-  max-width: 600px; /* Controls the width of the text block */
-  line-height: 1.6; /* Adjust line height for readability */
+  max-width: 550px; 
+  line-height: 1.6;
 }
 
 
@@ -392,7 +392,6 @@ header nav ul li a.active::after {
   height: auto;
   margin-right: 10px;
   border-radius: 5px;
-  /* background: #ffffff;  */
   padding: 5px;
 }
 
@@ -452,8 +451,6 @@ header nav ul li a.active::after {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
 }
 .contact-container {
   display: flex;
@@ -461,15 +458,13 @@ header nav ul li a.active::after {
   max-width: 1100px;
   width: 100%;
   border-radius: 20px;
-  overflow: hidden;
+  padding: 2em;
 }
 
-/* Default styling for larger screens */
 .contact-form-section,
 .contact-info-section {
   padding: 40px;
   width: 50%;
-  box-sizing: border-box;
 }
 
 .contact-form-section {
