@@ -283,7 +283,13 @@ header nav ul li a.active::after {
   height: 300px; 
   object-fit: cover; 
   margin: 1em 0;
-  border-radius: 10px; 
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.project-media img:hover, 
+.project-media video:hover {
+  transform: scale(1.05); /* Slightly increase the size */
 }
 
 .project p {
@@ -450,7 +456,7 @@ header nav ul li a.active::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .contact-container {
   display: flex;
@@ -467,11 +473,18 @@ header nav ul li a.active::after {
   width: 50%;
 }
 
+.contact-info-section {
+  border-top-right-radius:25px;
+  border-bottom-right-radius:25px;
+}
+
 .contact-form-section {
   background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-top-left-radius:25px;
+  border-bottom-left-radius:25px;
 }
 
 .contact-form-section h3 {
@@ -569,7 +582,6 @@ header nav ul li a.active::after {
   width: 24px;
   height: 24px;
 }
-
 
 /* Responsive adjustments for screens smaller than 768px */
 @media screen and (max-width: 768px) {
